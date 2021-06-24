@@ -462,14 +462,14 @@ def show(tg, ka, kg):
     if statusAman != 0:
         msg = "Aman ({})".format("%.2f" % statusAman)
         print('Status = ', msg)
-        respon = msg.to_json(orient="records")
+        stat = "aman"
     elif statusAwas != 0:
         msg = "Awas ({})".format("%.2f" % statusAwas)
         print('Status = ', msg)
-        respon = msg.to_json(orient="records")
+        stat = "awas"
     elif statusBahaya != 0:
         msg = "Bahaya ({})".format("%.2f" % statusBahaya)
         print('Status = ', msg)
-        respon = msg.to_json(orient="records")
+        stat = "bahaya"
     
-    return respon
+    return {"status":stat}
