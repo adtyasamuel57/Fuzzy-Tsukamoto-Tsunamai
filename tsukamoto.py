@@ -462,14 +462,14 @@ def show(tg, ka, kg):
     if statusAman != 0:
         msg = "Aman ({})".format("%.2f" % statusAman)
         print('Status = ', msg)
-        stat = "aman"
+        respon = "aman"
     elif statusAwas != 0:
         msg = "Awas ({})".format("%.2f" % statusAwas)
         print('Status = ', msg)
-        stat = "awas"
+        respon = "awas"
     elif statusBahaya != 0:
         msg = "Bahaya ({})".format("%.2f" % statusBahaya)
         print('Status = ', msg)
-        stat = "bahaya"
+        respon = "bahaya"
     
-    return {"status":stat}
+    return respon
