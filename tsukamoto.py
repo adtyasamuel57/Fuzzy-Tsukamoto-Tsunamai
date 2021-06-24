@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-
+import json
+import requests
 
 app = FastAPI()
 
@@ -7,11 +8,13 @@ app = FastAPI()
 def show(tg, ka, kg):
 
     #Class Fuzzy
-
+    tgg = float(tg)
+    kaa = float(ka)
+    kgg = float(kg)
     # input
-    tinggiGelombang = tg  # menggunakan satuan m
-    kuatArus = ka # Menggunakan satuan m/s
-    kuatGempa= kg # Menggunakan satuan ggal
+    tinggiGelombang = tgg  # menggunakan satuan m
+    kuatArus = kaa # Menggunakan satuan m/s
+    kuatGempa= kgg # Menggunakan satuan ggal
 
     # define tinggiGelombang
     tinggiDangkal = 0
