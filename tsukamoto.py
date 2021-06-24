@@ -161,7 +161,7 @@ def show(tg, ka, kg):
     elif 3.75 <= tinggiGelombang <= 4.25:
         tinggiTinggi = (tinggiGelombang-3.75)/(4.25-3.75)
     else:
-        masaKerjaBaru = 1
+        tinggiTinggi = 1
 
 
     # Jika Arus Lambat
