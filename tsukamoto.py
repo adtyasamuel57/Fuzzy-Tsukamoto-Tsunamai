@@ -328,7 +328,7 @@ def show(tg, ka, kg):
     z29 = 300000 + (z29 * 300000)
 
     R30 = min(tinggiSedang,arusKuat,gempaMerah)
-    z30 = 300000 + (z30 * 300000)
+    z30 = 100 + (z30 * 100)
 
     R31 = min(tinggiTinggi,arusLambat,gempaPutih)
     z31 = 300000 + (R31 * 300000)
