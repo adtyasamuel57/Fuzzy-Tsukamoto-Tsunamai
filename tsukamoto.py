@@ -1,8 +1,14 @@
 from fastapi import FastAPI
+from antares_http import antares
 import json
 import requests
 
 app = FastAPI()
+antares.setDebug(False)
+antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
+
+latestData = antares.get('NamiPostman', 'simulasiNami   ')
+print(latestData['content'])
 
 @app.get('/tsukamoto/{tg}/{ka}/{kg}')
 def show(tg, ka, kg):
