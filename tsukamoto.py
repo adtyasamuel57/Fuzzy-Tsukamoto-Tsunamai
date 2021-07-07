@@ -4,15 +4,20 @@ import json
 import requests
 
 app = FastAPI()
-antares.setDebug(False)
-antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
 
-latestData = antares.get('NamiPostman', 'simulasiNami   ')
-print(latestData['content'])
 
-@app.get('/tsukamoto/{tg}/{ka}/{kg}')
-def show(tg, ka, kg):
+@app.get('/tsukamoto/')
+def show():
 
+    antares.setDebug(False)
+    antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
+
+    latestData = antares.get('NamiPostman', 'simulasiNami')
+    print(latestData['content'])
+
+    tg = latestData['content']["tg"]
+    ka =latestData['content']["ka"]
+    kg = latestData['content']["kg"]
     #Class Fuzzy
     tgg = float(tg)
     kaa = float(ka)
