@@ -390,15 +390,22 @@ def show():
 
     # Menghitung nilai STATUS
     # Menjumlahkan (Ri) dan (Zi)
-    total_RiZi = (R1 * z1) + (R2 * z2) + (R3 * z3) + \
-        (R4 * z4) + (R5 * z5) + (R6 * z6)
+    total_RiZi = (R1 * z1) + (R2 * z2) + (R3 * z3) + (R4 * z4) + (R5 * z5) + (R6 * z6) + (R7*z7) + (R8*z8) + (R9*z9) + (R10*z10)\
+        (R1 * z11) + (R12 * z12) + (R13 * z13) + (R14 * z14) + (R15 * z15) + (R16 * z16) + (R17*z17) + (R18*z18) + (R19*z19) + (R20*z20)\
+        (R21 * z21) + (R22 * z22) + (R23 * z23) + (R24 * z24) + (R25 * z25) + (R26 * z26) + (R27*z27) + (R28*z28) + (R29*z29) + (R30*z30)\
+        (R31 * z31) + (R32 * z32) + (R33 * z33) + (R34 * z34) + (R35 * z35) + (R36 * z36) + (R37*z37) + (R38*z38) + (R39*z39) + (R40*z40)\
+        (R41 * z41) + (R42 * z42) + (R43 * z43) + (R44 * z44) + (R45 * z45) 
 
     # Menjumlahkan seluruh (Ri)
-    total_R = R1 + R2 + R3 + R4 + R5 + R6 + R7 +R8 + R9+ R10+R11+R12+R13+R14+R15+R16+R17+R18+R19+R20+R21+R22+R23+R24+R25+R26+R27+R28+R29+R30+R31+R32+R33+R34+R35+R36+R37+R38+R39+R40+R41+R42+R43+R44+R45
+    total_R = R1 + R2 + R3 + R4 + R5 + R6 + R7 +R8 + R9+ R10\
+    +R11+R12+R13+R14+R15+R16+R17+R18+R19+R20\
+    +R21+R22+R23+R24+R25+R26+R27+R28+R29+R30\
+    +R31+R32+R33+R34+R35+R36+R37+R38+R39+R40\
+    +R41+R42+R43+R44+R45
+
     # Mendapatkan nilai_z / total bonus
     nilai_z = total_RiZi / total_R
-
-
+   
     status = nilai_z
     #Jika Status Aman
     if status <= 33:
