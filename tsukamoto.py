@@ -252,25 +252,25 @@ def show():
 
     #Menghitung Rule
     R1 = min(tinggiDangkal,arusLambat,gempaPutih)
-    z1 = 33 - (33 * R1)
+    z1 = 34 + (1 * R1)
 
     R2 = min(tinggiDangkal,arusLambat,gempaHijau)
-    z2 = 600000 - (300000 * R2)
+    z2 = 34 + (1 * R2)
 
     R3 = min(tinggiDangkal,arusLambat,gempaKuning)
-    z3 = 600000 - (300000 * R3)
+    z3 = 34 + (1 * R3)
 
     R4 = min(tinggiDangkal,arusLambat,gempaJingga)
-    z4 = 300000 + (R4 * 300000)
+    z4 = 34 + (1 * R4)
 
     R5 = min(tinggiDangkal,arusLambat,gempaMerah)
-    z5 = 300000 + (R5 * 300000)
+    z5 = 33 + (R5 * 1)
 
     R6 = min(tinggiDangkal,arusSedang,gempaPutih)
-    z6 = 300000 + (R6 * 300000)
+    z6 = 34 + (1 * R6)
 
     R7 = min(tinggiDangkal,arusSedang,gempaHijau)
-    z7 = 300000 + (R7 * 300000)
+    z7 = 34 + (1 * R7)
 
     R8 = min(tinggiDangkal,arusSedang,gempaKuning)
     z8 = 300000 + (R8 * 300000)
