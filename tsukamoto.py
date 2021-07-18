@@ -434,139 +434,409 @@ def show():
 
     #Menghitung Rule
     R1 = min(tinggiDangkal,arusLambat,gempaPutih)
-    z1 = 34 + (1 * R1)
+    z1 = 34 - R1
 
-    R2 = min(tinggiDangkal,arusLambat,gempaHijau)
-    z2 = 34 + (1 * R2)
+    R2 = min(tinggiDangkal,arusLambat,gempaPutih)
+    z2 = R2 + 33
 
-    R3 = min(tinggiDangkal,arusLambat,gempaKuning)
-    z3 = 34 + (1 * R3)
+    R3 = min(tinggiDangkal,arusLambat,gempaPutih)
+    z3 = 67 - R3
 
-    R4 = min(tinggiDangkal,arusLambat,gempaJingga)
-    z4 = 34 + (1 * R4)
+    R4 = min(tinggiDangkal,arusLambat,gempaHijau)
+    z4 = 34 - R4
 
-    R5 = min(tinggiDangkal,arusLambat,gempaMerah)
-    z5 = 33 + (R5 * 1)
+    R5 = min(tinggiDangkal,arusLambat,gempaHijau)
+    z5 = 33 + R5
 
-    R6 = min(tinggiDangkal,arusSedang,gempaPutih)
-    z6 = 34 + (1 * R6)
+    R6 = min(tinggiDangkal,arusLambat,gempaHijau)
+    z6 = 67 - R6
 
-    R7 = min(tinggiDangkal,arusSedang,gempaHijau)
-    z7 = 34 + (1 * R7)
+    R7 = min(tinggiDangkal,arusLambat,gempaKuning)
+    z7 = 34 - R7
 
-    R8 = min(tinggiDangkal,arusSedang,gempaKuning)
-    z8 = 300000 + (R8 * 300000)
+    R8 = min(tinggiDangkal,arusLambat,gempaKuning)
+    z8 = R8 + 33
 
-    R9 = min(tinggiDangkal,arusSedang,gempaJingga)
-    z9 = 300000 + (R9 * 300000)
+    R9 = min(tinggiDangkal,arusLambat,gempaKuning)
+    z9 = 67 - R9
 
-    R10 = min(tinggiDangkal,arusSedang,gempaMerah)
-    z10 = 300000 + (R10 * 300000)
+    R10 = min(tinggiDangkal,arusLambat,gempaJingga)
+    z10 = 34 - R10
 
-    R11 = min(tinggiDangkal,arusKuat,gempaPutih)
-    z11 = 300000 + (R11 * 300000)
+    R11 = min(tinggiDangkal,arusLambat,gempaJingga)
+    z11 = R11 + 33
 
-    R12 = min(tinggiDangkal,arusKuat,gempaHijau)
-    z12 = 300000 + (R12 * 300000)
+    R12 = min(tinggiDangkal,arusLambat,gempaJingga)
+    z12 = 67 - R12
 
-    R13 = min(tinggiDangkal,arusKuat,gempaKuning)
-    z13 = 300000 + (R13 * 300000)
+    R13 = min(tinggiDangkal,arusLambat,gempaMerah)
+    z13 = 34 - R13
 
-    R14 = min(tinggiDangkal,arusKuat,gempaJingga)
-    z14 = 300000 + (R14 * 300000)
+    R14 = min(tinggiDangkal,arusLambat,gempaMerah)
+    z14 = R14 + 33
 
-    R15 = min(tinggiDangkal,arusKuat,gempaMerah)
-    z15 = 300000 + (R15 * 300000)
+    R15 = min(tinggiDangkal,arusLambat,gempaMerah)
+    z15 = 67 - R15
 
-    R16 = min(tinggiSedang,arusLambat,gempaPutih)
-    z16 = 300000 + (R16 * 300000)
+    R16 = min(tinggiDangkal,arusSedang,gempaPutih)
+    z16 = 34 - R16
 
-    R17 = min(tinggiSedang,arusLambat,gempaHijau)
-    z17 = 300000 + (R17 * 300000)
+    R17 = min(tinggiDangkal,arusSedang,gempaPutih)
+    z17 = R17 + 33
 
-    R18 = min(tinggiSedang,arusLambat,gempaKuning)
-    z18 = 300000 + (R18 * 300000)
+    R18 = min(tinggiDangkal,arusSedang,gempaPutih)
+    z18 = 67 - R18
 
-    R19 = min(tinggiSedang,arusLambat,gempaJingga)
-    z19 = 300000 + (R19 * 300000)
+    R19 = min(tinggiDangkal,arusSedang,gempaHijau)
+    z19 = 34 - R19
 
-    R20 = min(tinggiSedang,arusLambat,gempaMerah)
-    z20 = 300000 + (R20 * 300000)
+    R20 = min(tinggiDangkal,arusSedang,gempaHijau)
+    z20 = R20 + 33
 
-    R21 = min(tinggiSedang,arusSedang,gempaPutih)
-    z21 = 300000 + (z21 * 300000)
+    R21 = min(tinggiDangkal,arusSedang,gempaHijau)
+    z21 = 67 - R21
 
-    R22 = min(tinggiSedang,arusSedang,gempaHijau)
-    z22 = 300000 + (z22 * 300000)
+    R22 = min(tinggiDangkal,arusSedang,gempaKuning)
+    z22 = 34 - R22
 
-    R23 = min(tinggiSedang,arusSedang,gempaKuning)
-    z23 = 300000 + (z23 * 300000)
+    R23 = min(tinggiDangkal,arusSedang,gempaKuning)
+    z23 = R23 + 33
 
-    R24 = min(tinggiSedang,arusSedang,gempaJingga)
-    z24 = 300000 + (z24 * 300000)
+    R24 = min(tinggiDangkal,arusSedang,gempaKuning)
+    z24 = 67 - R24
 
-    R25 = min(tinggiSedang,arusSedang,gempaMerah)
-    z25 = 300000 + (z25 * 300000)
+    R25 = min(tinggiDangkal,arusSedang,gempaJingga)
+    z25 = 34 - R25
 
-    R26 = min(tinggiSedang,arusKuat,gempaPutih)
-    z26 = 300000 + (z26 * 300000)
+    R26 = min(tinggiDangkal,arusSedang,gempaJingga)
+    z26 = R26 + 33
 
-    R27 = min(tinggiSedang,arusKuat,gempaHijau)
-    z27 = 300000 + (z27 * 300000)
+    R27 = min(tinggiDangkal,arusSedang,gempaJingga)
+    z27 = 67 - R27
 
-    R28 = min(tinggiSedang,arusKuat,gempaKuning)
-    z28 = 300000 + (z28 * 300000)
+    R28 = min(tinggiDangkal,arusSedang,gempaMerah)
+    z28 = 34 - R28
 
-    R29 = min(tinggiSedang,arusKuat,gempaJingga)
-    z29 = 300000 + (z29 * 300000)
+    R29 = min(tinggiDangkal,arusSedang,gempaMerah)
+    z29 = R29 + 33
 
-    R30 = min(tinggiSedang,arusKuat,gempaMerah)
-    z30 = 100 + (z30 * 100)
+    R30 = min(tinggiDangkal,arusSedang,gempaMerah)
+    z30 = 67 - R30
 
-    R31 = min(tinggiTinggi,arusLambat,gempaPutih)
-    z31 = 300000 + (R31 * 300000)
+    R31 = min(tinggiDangkal,arusKuat,gempaPutih)
+    z31 = 34 - R31
 
-    R32 = min(tinggiTinggi,arusLambat,gempaHijau)
-    z32 = 300000 + (R32 * 300000)
+    R32 = min(tinggiDangkal,arusKuat,gempaPutih)
+    z32 = R32 + 33
 
-    R33 = min(tinggiTinggi,arusLambat,gempaKuning)
-    z33 = 300000 + (R33 * 300000)
+    R33 = min(tinggiDangkal,arusKuat,gempaPutih)
+    z33 = 67 - R33
 
-    R34 = min(tinggiTinggi,arusLambat,gempaJingga)
-    z34 = 300000 + (R34 * 300000)
+    R34 = min(tinggiDangkal,arusKuat,gempaHijau)
+    z34 = 34 - R34
 
-    R35 = min(tinggiTinggi,arusLambat,gempaMerah)
-    z35 = 300000 + (R35 * 300000)
+    R35 = min(tinggiDangkal,arusKuat,gempaHijau)
+    z35 = R35 + 33
 
-    R36 = min(tinggiTinggi,arusSedang,gempaPutih)
-    z36 = 300000 + (R36 * 300000)
+    R36 = min(tinggiDangkal,arusKuat,gempaHijau)
+    z36 = 67 - R36
 
-    R37 = min(tinggiTinggi,arusSedang,gempaHijau)
-    z37 = 300000 + (R37 * 300000)
+    R37 = min(tinggiDangkal,arusKuat,gempaKuning)
+    z37 = 34 - R37
 
-    R38 = min(tinggiTinggi,arusSedang,gempaKuning)
-    z38 = 300000 + (R38 * 300000)
+    R38 = min(tinggiDangkal,arusKuat,gempaKuning)
+    z38 = R38 + 33
 
-    R39 = min(tinggiTinggi,arusSedang,gempaJingga)
-    z39 = 300000 + (R39 * 300000)
+    R39 = min(tinggiDangkal,arusKuat,gempaKuning)
+    z39 = 67 - R39
 
-    R40 = min(tinggiTinggi,arusSedang,gempaMerah)
-    z40 = 300000 + (R40 * 300000)
+    R40 = min(tinggiDangkal,arusKuat,gempaJingga)
+    z40 = 34 - R40
 
-    R41 = min(tinggiTinggi,arusKuat,gempaPutih)
-    z41 = 300000 + (R41 * 300000)
+    R41 = min(tinggiDangkal,arusKuat,gempaJingga)
+    z41 = R41 + 33
 
-    R42 = min(tinggiTinggi,arusKuat,gempaHijau)
-    z42 = 300000 + (R42 * 300000)
+    R42 = min(tinggiDangkal,arusKuat,gempaJingga)
+    z42 = 67 - R42
 
-    R43 = min(tinggiTinggi,arusKuat,gempaKuning)
-    z43 = 300000 + (R43 * 300000)
+    R43 = min(tinggiDangkal,arusKuat,gempaMerah)
+    z43 = 34 - R43
 
-    R44 = min(tinggiTinggi,arusKuat,gempaJingga)
-    z44 = 300000 + (R44 * 300000)
+    R44 = min(tinggiDangkal,arusKuat,gempaMerah)
+    z44 = R44 + 33
 
-    R45 = min(tinggiTinggi,arusKuat,gempaMerah)
-    z45 = 300000 + (R45 * 300000)
+    R45 = min(tinggiDangkal,arusKuat,gempaMerah)
+    z45 = 67 - R45
+
+    R46 = min(tinggiSedang,arusLambat,gempaPutih)
+    z46 = 34 - R46
+
+    R47 = min(tinggiSedang,arusLambat,gempaPutih)
+    z47 = R47 + 33
+
+    R48 = min(tinggiSedang,arusLambat,gempaPutih)
+    z48 = 67 - R48
+
+    R49= min(tinggiSedang,arusLambat,gempaHijau)
+    z49 = 34 - R49
+
+    R50 = min(tinggiSedang,arusLambat,gempaHijau)
+    z50 = R50 + 33
+
+    R51 = min(tinggiSedang,arusLambat,gempaHijau)
+    z51 = 67 - R51
+
+    R52= min(tinggiSedang,arusLambat,gempaKuning)
+    z52 = 34 - R52
+
+    R53 = min(tinggiSedang,arusLambat,gempaKuning)
+    z53 = R53 + 33
+
+    R54 = min(tinggiSedang,arusLambat,gempaKuning)
+    z54 = 67 - R54
+
+    R55= min(tinggiSedang,arusLambat,gempaJingga)
+    z55 = 34 - R55
+
+    R56 = min(tinggiSedang,arusLambat,gempaJingga)
+    z56 = R56 + 33
+
+    R57 = min(tinggiSedang,arusLambat,gempaJingga)
+    z57 = 67 - R57
+
+    R58= min(tinggiSedang,arusLambat,gempaMerah)
+    z58 = 34 - R58
+
+    R59 = min(tinggiSedang,arusLambat,gempaMerah)
+    z59 = R59 + 33
+
+    R60 = min(tinggiSedang,arusLambat,gempaMerah)
+    z60 = 67 - R60
+
+    R61= min(tinggiSedang,arusSedang,gempaPutih)
+    z61 = 34 - R61
+
+    R62 = min(tinggiSedang,arusSedang,gempaPutih)
+    z62 = R62 + 33
+
+    R63 = min(tinggiSedang,arusSedang,gempaPutih)
+    z63 = 67 - R63
+
+    R64= min(tinggiSedang,arusSedang,gempaHijau)
+    z64 = 34 - R64
+
+    R65 = min(tinggiSedang,arusSedang,gempaHijau)
+    z65 = R65 + 33
+
+    R66 = min(tinggiSedang,arusSedang,gempaHijau)
+    z66 = 67 - R66
+
+    R67= min(tinggiSedang,arusSedang,gempaKuning)
+    z67 = 34 - R67
+
+    R68 = min(tinggiSedang,arusSedang,gempaKuning)
+    z68 = R68 + 33
+
+    R69 = min(tinggiSedang,arusSedang,gempaKuning)
+    z69 = 67 - R69
+
+    R70= min(tinggiSedang,arusSedang,gempaJingga)
+    z70 = 34 - R70
+
+    R71 = min(tinggiSedang,arusSedang,gempaJingga)
+    z71 = R71 + 33
+
+    R72 = min(tinggiSedang,arusSedang,gempaJingga)
+    z72 = 67 - R72
+
+    R73= min(tinggiSedang,arusSedang,gempaMerah)
+    z73 = 34 - R73
+
+    R74 = min(tinggiSedang,arusSedang,gempaMerah)
+    z74 = R74 + 33
+
+    R75 = min(tinggiSedang,arusSedang,gempaMerah)
+    z75 = 67 - R75
+
+    R76= min(tinggiSedang,arusKuat,gempaPutih)
+    z76 = 34 - R76
+
+    R77 = min(tinggiSedang,arusKuat,gempaPutih)
+    z77 = R77 + 33
+
+    R78 = min(tinggiSedang,arusKuat,gempaPutih)
+    z78 = 67 - R78
+
+    R79= min(tinggiSedang,arusKuat,gempaHijau)
+    z79 = 34 - R79
+
+    R80 = min(tinggiSedang,arusKuat,gempaHijau)
+    z80 = R80 + 33
+
+    R81 = min(tinggiSedang,arusKuat,gempaHijau)
+    z81 = 67 - R81
+
+    R82= min(tinggiSedang,arusKuat,gempaKuning)
+    z82 = 34 - R82
+
+    R83 = min(tinggiSedang,arusKuat,gempaKuning)
+    z83 = R83 + 33
+
+    R84 = min(tinggiSedang,arusKuat,gempaKuning)
+    z84 = 67 - R84
+
+    R85= min(tinggiSedang,arusKuat,gempaJingga)
+    z85 = 34 - R85
+
+    R86 = min(tinggiSedang,arusKuat,gempaJingga)
+    z86 = R86 + 33
+
+    R87 = min(tinggiSedang,arusKuat,gempaJingga)
+    z87 = 67 - R87
+
+    R88= min(tinggiSedang,arusKuat,gempaMerah)
+    z88 = 34 - R88
+
+    R89 = min(tinggiSedang,arusKuat,gempaMerah)
+    z89 = R89 + 33
+
+    R90 = min(tinggiSedang,arusKuat,gempaMerah)
+    z90 = 67 - R90
+
+    R91= min(tinggiTinggi,arusLambat,gempaPutih)
+    z91 = 34 - R91
+
+    R92 = min(tinggiTinggi,arusLambat,gempaPutih)
+    z92 = R92 + 33
+
+    R93 = min(tinggiTinggi,arusLambat,gempaPutih)
+    z93 = 67 - R93
+
+    R94= min(tinggiTinggi,arusLambat,gempaHijau)
+    z94 = 34 - R94
+
+    R95 = min(tinggiTinggi,arusLambat,gempaHijau)
+    z95 = R95 + 33
+
+    R96 = min(tinggiTinggi,arusLambat,gempaHijau)
+    z96 = 67 - R96
+
+    R97= min(tinggiTinggi,arusLambat,gempaKuning)
+    z97 = 34 - R97
+
+    R98 = min(tinggiTinggi,arusLambat,gempaKuning)
+    z98 = R98 + 33
+
+    R99 = min(tinggiTinggi,arusLambat,gempaKuning)
+    z99 = 67 - R99
+
+    R100= min(tinggiTinggi,arusLambat,gempaJingga)
+    z100 = 34 - R100
+
+    R101 = min(tinggiTinggi,arusLambat,gempaJingga)
+    z101 = R101 + 33
+
+    R102 = min(tinggiTinggi,arusLambat,gempaJingga)
+    z102 = 67 - R102
+
+    R103= min(tinggiTinggi,arusLambat,gempaMerah)
+    z103 = 34 - R103
+
+    R104 = min(tinggiTinggi,arusLambat,gempaMerah)
+    z104 = R104 + 33
+
+    R105 = min(tinggiTinggi,arusLambat,gempaMerah)
+    z105 = 67 - R105
+
+    R106= min(tinggiTinggi,arusSedang,gempaPutih)
+    z106 = 34 - R106
+
+    R107 = min(tinggiTinggi,arusSedang,gempaPutih)
+    z107 = R107 + 33
+
+    R108 = min(tinggiTinggi,arusSedang,gempaPutih)
+    z108 = 67 - R108
+
+    R109= min(tinggiTinggi,arusSedang,gempaHijau)
+    z109 = 34 - R109
+
+    R110 = min(tinggiTinggi,arusSedang,gempaHijau)
+    z110 = R110 + 33
+
+    R111 = min(tinggiTinggi,arusSedang,gempaHijau)
+    z111 = 67 - R111
+
+    R112= min(tinggiTinggi,arusSedang,gempaKuning)
+    z112 = 34 - R112
+
+    R113 = min(tinggiTinggi,arusSedang,gempaKuning)
+    z113 = R113 + 33
+
+    R114 = min(tinggiTinggi,arusSedang,gempaKuning)
+    z114 = 67 - R114
+
+    R115= min(tinggiTinggi,arusSedang,gempaJingga)
+    z115 = 34 - R115
+
+    R116 = min(tinggiTinggi,arusSedang,gempaJingga)
+    z116 = R116 + 33
+
+    R117 = min(tinggiTinggi,arusSedang,gempaJingga)
+    z117 = 67 - R117
+
+    R118= min(tinggiTinggi,arusSedang,gempaMerah)
+    z118 = 34 - R118
+
+    R119 = min(tinggiTinggi,arusSedang,gempaMerah)
+    z119 = R119 + 33
+
+    R120 = min(tinggiTinggi,arusSedang,gempaMerah)
+    z120 = 67 - R120
+
+    R121= min(tinggiTinggi,arusKuat,gempaPutih)
+    z121 = 34 - R121
+
+    R122 = min(tinggiTinggi,arusKuat,gempaPutih)
+    z122 = R122 + 33
+
+    R123 = min(tinggiTinggi,arusKuat,gempaPutih)
+    z123 = 67 - R123
+
+    R124= min(tinggiTinggi,arusKuat,gempaHijau)
+    z124 = 34 - R124
+
+    R125 = min(tinggiTinggi,arusKuat,gempaHijau)
+    z125 = R125 + 33
+
+    R126 = min(tinggiTinggi,arusKuat,gempaHijau)
+    z126 = 67 - R126
+
+    R127= min(tinggiTinggi,arusKuat,gempaKuning)
+    z127 = 34 - R127
+
+    R128 = min(tinggiTinggi,arusKuat,gempaKuning)
+    z128 = R128 + 33
+
+    R129 = min(tinggiTinggi,arusKuat,gempaKuning)
+    z129 = 67 - R129
+
+    R130= min(tinggiTinggi,arusKuat,gempaJingga)
+    z130 = 34 - R130
+
+    R131 = min(tinggiTinggi,arusKuat,gempaJingga)
+    z131 = R131 + 33
+
+    R132 = min(tinggiTinggi,arusKuat,gempaJingga)
+    z132 = 67 - R132
+
+    R133= min(tinggiTinggi,arusKuat,gempaMerah)
+    z133 = 34 - R133
+
+    R134 = min(tinggiTinggi,arusKuat,gempaMerah)
+    z134 = R134 + 33
+
+    R135 = min(tinggiTinggi,arusKuat,gempaMerah)
+    z135 = 67 - R135
 
 
 
