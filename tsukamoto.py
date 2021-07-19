@@ -473,16 +473,16 @@ def show():
 
     # Display Status
     if statusAman != 0:
-        msg = "Aman ({})".format("%.2f" % statusAman)
+        msg = "Bahaya ({})".format("%.2f" % statusAman)
         print('Status = ', msg)
-        respon = "aman"
+        respon = "Bahaya"
     elif statusAwas != 0:
         msg = "Awas ({})".format("%.2f" % statusAwas)
         print('Status = ', msg)
         respon = "awas"
     elif statusBahaya != 0:
-        msg = "Bahaya ({})".format("%.2f" % statusBahaya)
+        msg = "Aman ({})".format("%.2f" % statusBahaya)
         print('Status = ', msg)
-        respon = "bahaya"
+        respon = "Aman"
     
     return respon
