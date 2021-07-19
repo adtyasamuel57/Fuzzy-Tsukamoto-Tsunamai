@@ -268,7 +268,7 @@ def show():
     z4 = R4 + 33
 
     R5 = min(tinggiDangkal,arusLambat,gempaMerah)
-    z5 = 67 - R5
+    z5 = R5 + 66
 
     R6 = min(tinggiDangkal,arusSedang,gempaPutih)
     z6 = 34 - R6
@@ -280,10 +280,10 @@ def show():
     z8 = R8 + 33
 
     R9 = min(tinggiDangkal,arusSedang,gempaJingga)
-    z9 = 67 - R9
+    z9 = R9 + 66
 
     R10 = min(tinggiDangkal,arusSedang,gempaMerah)
-    z10 = 67 - R10
+    z10 = R10 + 66
 
     R11 = min(tinggiDangkal,arusKuat,gempaPutih)
     z11 = 34 - R11
@@ -292,13 +292,13 @@ def show():
     z12 = R12 + 33
 
     R13 = min(tinggiDangkal,arusKuat,gempaKuning)
-    z13 = 67 - R13
+    z13 = R13 + 66
 
     R14 = min(tinggiDangkal,arusKuat,gempaJingga)
-    z14 = 67 - R14 
+    z14 = R14 + 66 
 
     R15 = min(tinggiDangkal,arusKuat,gempaMerah)
-    z15 = 67 - R15
+    z15 = R15 + 66
 
     R16 = min(tinggiSedang,arusLambat,gempaPutih)
     z16 = 34 - R16
@@ -313,7 +313,7 @@ def show():
     z19 = R19 + 33
 
     R20 = min(tinggiSedang,arusLambat,gempaMerah)
-    z20 = 67 - R20 
+    z20 = R20 + 66
 
     R21 = min(tinggiSedang,arusSedang,gempaPutih)
     z21 = 34 - R21
