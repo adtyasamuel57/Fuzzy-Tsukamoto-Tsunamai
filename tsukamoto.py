@@ -496,10 +496,4 @@ def show():
         print('Status = ', msg)
         respon = "Bahaya"
 
-    class Data:
-        respon = respon
-        tggg = tggg
-        spd = spd
-        gmp = gmp
-
-    return Data
+    return respon
