@@ -435,41 +435,52 @@ def show():
     if tinggiDangkal != 0:
         msg = "Dangkal ({})".format("%.2f" % tinggiDangkal)
         print('Tinggi Gelombang = ', msg)
+        tggg ="dangkal"
     elif tinggiSedang != 0:
         msg = "Sedang ({})".format("%.2f" % tinggiSedang)
         print('Tinggi Gelombang = ', msg)
+        tggg ="sedang"
     elif tinggiTinggi != 0:
         msg = "Tinggi ({})".format("%.2f" % tinggiTinggi)
         print('Tinggi Gelombang = ', msg)
+        tggg ="tinggi"
 
     #Display Kuat Arus
     if arusLambat != 0:
         msg = "Lambat ({})".format("%.2f" % arusLambat)
         print('Kecepatan Arus = ', msg)
+        spd ="lambat"
     elif arusSedang != 0:
         msg = "Sedang ({})".format("%.2f" % arusSedang)
         print('Kecepatan Arus = ', msg)
+        spd ="sedang"
     elif arusKuat != 0:
         msg = "Kuat ({})".format("%.2f" % arusKuat)
         print('Kecepatan Arus = ', msg)
+        spd ="kuat"
 
     #Display Gempa
 
     if gempaPutih != 0:
         msg = "Putih ({})".format("%.2f" % gempaPutih)
         print('Kekuatan Gempa = ', msg)
+        gmp ="putih"
     elif gempaHijau != 0:
         msg = "Hijau ({})".format("%.2f" % gempaHijau)
         print('Kekuatan Gempa = ', msg)
+        gmp ="hijau"
     elif gempaKuning != 0:
         msg = "Kuning ({})".format("%.2f" % gempaKuning)
         print('Kekuatan Gempa = ', msg)
+        gmp ="kuning"
     elif gempaJingga != 0:
         msg = "Jingga ({})".format("%.2f" % gempaJingga)
         print('Kekuatan Gempa = ', msg)
+        gmp ="jingga"
     elif gempaMerah != 0:
         msg = "merah ({})".format("%.2f" % gempaMerah)
         print('Kekuatan Gempa = ', msg)
+        gmp ="merah"
 
     # Display Status
     if statusAman != 0:
@@ -484,5 +495,11 @@ def show():
         msg = "Bahaya ({})".format("%.2f" % statusBahaya)
         print('Status = ', msg)
         respon = "Bahaya"
-    
-    return respon
+
+    class Data:
+        respon = respon
+        tggg = tggg
+        spd = spd
+        gmp = gmp
+
+    return Data
