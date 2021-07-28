@@ -159,7 +159,7 @@ def show():
     if tinggiGelombang <= 1.5:
         tinggiDangkal = 1
     elif 1.5 < tinggiGelombang <= 2:
-        tinggiDangkal = (1.5-tinggiGelombang) / (2 - 1.5)
+        tinggiDangkal = (2-tinggiGelombang) / (2 - 1.5)
     else:
         tinggiDangkal = 0
 
@@ -186,7 +186,7 @@ def show():
     if kuatArus <= 3:
         arusLambat = 1
     elif 3 < kuatArus <= 5.5:
-        arusLambat = (10 - kuatArus) / (10 - 6)
+        arusLambat = (5.5 - kuatArus) / (5.5 - 3)
     else:
         arusLambat = 0
 
@@ -415,7 +415,7 @@ def show():
         statusAwas = (status-33)/(34-33)
     elif 34 <= status <= 66:
         statusAwas = 1
-    elif 66 <= status <67 :
+    elif 66 <= status <=67 :
         statusAwas = (67- status)/(67-66)
     else:
         statusAwas = 0
@@ -423,13 +423,10 @@ def show():
     #Jika Status Bahaya
     if status < 66 :
         statusBahaya = 0
-    elif 66 < status <= 67:
+    elif 66 <= status <= 67:
         statusBahaya = (status-66)/(67-66)
     else:
         statusBahaya = 1
-
-
-
 
     #Display Tinggi Gelombang
     if tinggiDangkal != 0:
@@ -496,4 +493,4 @@ def show():
         print('Status = ', msg)
         respon = "Bahaya"
 
-    return respon
+    return respon, tggg,spd,gmp
