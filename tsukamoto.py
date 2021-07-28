@@ -493,4 +493,4 @@ def show():
         print('Status = ', msg)
         respon = "Bahaya"
 
-    return respon, tggg,spd,gmp
+    return respon, tggg,tg,spd,ka,gmp,kg
