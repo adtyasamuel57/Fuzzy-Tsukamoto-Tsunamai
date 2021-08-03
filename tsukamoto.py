@@ -1,7 +1,8 @@
 from fastapi import FastAPI
-from antares_http import antares
+# from antares_http import antares
 import json
 import requests
+import mysql.connector
 
 app = FastAPI()
 
@@ -9,15 +10,25 @@ app = FastAPI()
 @app.get('/tsukamoto/')
 def show():
 
-    antares.setDebug(False)
-    antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
+    # antares.setDebug(False)
+    # antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
 
-    latestData = antares.get('NamiPostman', 'simulasiNami')
-    print(latestData['content'])
+    # latestData = antares.get('NamiPostman', 'simulasiNami')
+    # print(latestData['content'])
+    mydb = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    password = "",
+    database = "laravel"
+    )
+    mycursor = mydb.cursor()
+    mycursor.execute(" SELECT * FROM sea ORDER BY id desc")
 
-    tg = latestData['content']["tg"]
-    ka =latestData['content']["ka"]
-    kg = latestData['content']["kg"]
+    myresult = mycursor.fetchone()
+
+    tg = myresult [1]
+    ka =myresult [2]
+    kg = myresult [3]
     #Class Fuzzy
     tgg = float(tg)
     kaa = float(ka)
@@ -164,19 +175,19 @@ def show():
         tinggiDangkal = 0
 
     # Jika Gelombang Sedang
-    if 1.75 <= tinggiGelombang <= 2.25:
+    if 1.75 <= tinggiGelombang < 2.25:
         tinggiSedang = (tinggiGelombang-1.75)/(2.25-1.75)
-    elif 2.25 < tinggiGelombang <= 3.5:
+    elif 2.25 <= tinggiGelombang <= 3.5:
         tinggiSedang = 1
-    elif 3.5 < tinggiGelombang < 4:
+    elif 3.5 < tinggiGelombang <= 4:
         tinggiSedang = (4 - tinggiSedang) / (4 - 3.5)
     else:
         tinggiSedang = 0
 
     # Jika Gelombang Tinggi 
-    if tinggiGelombang < 3.75:
+    if tinggiGelombang <= 3.75:
         tinggiTinggi = 0
-    elif 3.75 <= tinggiGelombang <= 4.25:
+    elif 3.75 <= tinggiGelombang < 4.25:
         tinggiTinggi = (tinggiGelombang-3.75)/(4.25-3.75)
     else:
         tinggiTinggi = 1
@@ -405,7 +416,7 @@ def show():
     #Jika Status Aman
     if status <= 33:
         statusAman = 1
-    elif 33<= status < 34:
+    elif 33< status < 34:
         statusAman = (34-status) / (34-33)
     else:
         statusAman = 0 
