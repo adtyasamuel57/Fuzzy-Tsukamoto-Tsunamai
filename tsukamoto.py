@@ -503,5 +503,6 @@ def show():
         msg = "Bahaya ({})".format("%.2f" % statusBahaya)
         print('Status = ', msg)
         respon = "Bahaya"
-
-    return respon, tggg,tg,spd,ka,gmp,kg
+    hasil = respon,tggg,tg,spd,ka,gmp,kg
+    hasiljson = json.dumps(hasil)
+    return hasiljson
