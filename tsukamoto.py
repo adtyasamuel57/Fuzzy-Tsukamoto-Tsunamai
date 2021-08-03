@@ -508,5 +508,4 @@ def show():
         print('Status = ', msg)
         respon = "Bahaya"
     hasil = respon,tggg,tg,spd,ka,gmp,kg
-    hasiljson= json.dumps(hasil)
-    return hasiljson
+    return hasil
