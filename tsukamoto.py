@@ -1,8 +1,7 @@
 from fastapi import FastAPI
-# from antares_http import antares
+from antares_http import antares
 import json
 import requests
-import mysql.connector
 
 app = FastAPI()
 
@@ -10,25 +9,15 @@ app = FastAPI()
 @app.get('/tsukamoto/')
 def show():
 
-    # antares.setDebug(False)
-    # antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
+    antares.setDebug(False)
+    antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
 
-    # latestData = antares.get('NamiPostman', 'simulasiNami')
-    # print(latestData['content'])
-    mydb = mysql.connector.connect(
-    host = "localhost",
-    user = "root",
-    password = "",
-    database = "laravel"
-    )
-    mycursor = mydb.cursor()
-    mycursor.execute(" SELECT * FROM sea ORDER BY id desc")
+    latestData = antares.get('NamiPostman', 'simulasiNami')
+    print(latestData['content'])
 
-    myresult = mycursor.fetchone()
-
-    tg = myresult [1]
-    ka =myresult [2]
-    kg = myresult [3]
+    tg = latestData['content']["tg"]
+    ka =latestData['content']["ka"]
+    kg = latestData['content']["kg"]
     #Class Fuzzy
     tgg = float(tg)
     kaa = float(ka)
@@ -503,6 +492,5 @@ def show():
         msg = "Bahaya ({})".format("%.2f" % statusBahaya)
         print('Status = ', msg)
         respon = "Bahaya"
-    hasil = respon,tggg,tg,spd,ka,gmp,kg
-    hasiljson = json.dumps(hasil)
-    return hasiljson
+
+    return respon, tggg,tg,spd,ka,gmp,kg
