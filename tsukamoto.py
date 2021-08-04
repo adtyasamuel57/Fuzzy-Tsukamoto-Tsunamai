@@ -11,28 +11,28 @@ app = FastAPI()
 @app.get('/tsukamoto/')
 def show():
 
-    # antares.setDebug(False)
-    # antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
+    antares.setDebug(False)
+    antares.setAccessKey('935a0ba3ee50ed9c:c835eedd1ff34101')
 
-    # latestData = antares.get('NamiPostman', 'simulasiNami')
-    # print(latestData['content'])
+    latestData = antares.get('NamiPostman', 'simulasiNami')
+    print(latestData['content'])
 
-    # tg = latestData['content']["tg"]
-    # ka =latestData['content']["ka"]
-    # kg = latestData['content']["kg"]
-    mydb = mysql.connector.connect(
-    host = "localhost",
-    user = "root",
-    password = "",
-    database = "laravel"
-)
-    mycursor = mydb.cursor()
-    mycursor.execute(" SELECT * FROM sea ORDER BY id desc")
+    tg = latestData['content']["tg"]
+    ka =latestData['content']["ka"]
+    kg = latestData['content']["kg"]
+#     mydb = mysql.connector.connect(
+#     host = "localhost",
+#     user = "pantaupa_nami",
+#     password = "Tsunami666",
+#     database = "pantaupa_laravel"
+# )
+#     mycursor = mydb.cursor()
+#     mycursor.execute(" SELECT * FROM sea ORDER BY id desc")
 
-    myresult = mycursor.fetchone()
-    tg = myresult [1]
-    ka = myresult [2]
-    kg = myresult [3]
+#     myresult = mycursor.fetchone()
+#     tg = myresult [1]
+#     ka = myresult [2]
+#     kg = myresult [3]
     
 
     
