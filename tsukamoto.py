@@ -502,7 +502,7 @@ def show():
     if statusAman != 0:
         msg = "Aman ({})".format("%.2f" % statusAman)
         print('Status = ', msg)
-        respon = "Aman"
+        respon = "Bahaya"
     elif statusAwas != 0:
         msg = "Awas ({})".format("%.2f" % statusAwas)
         print('Status = ', msg)
@@ -510,7 +510,7 @@ def show():
     elif statusBahaya != 0:
         msg = "Bahaya ({})".format("%.2f" % statusBahaya)
         print('Status = ', msg)
-        respon = "Bahaya"
+        respon = "Aman"
     # hasil = respon,tggg,tg,spd,ka,gmp,kg
     # y = pd.DataFrame(hasil)
     # z = y.to_json()
