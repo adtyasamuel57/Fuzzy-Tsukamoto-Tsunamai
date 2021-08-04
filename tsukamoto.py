@@ -281,43 +281,43 @@ def show():
     z2 = 34 - R2
 
     R3 = min(tinggiDangkal,arusLambat,gempaKuning)
-    z3 = R3 + 33
+    z3 = 34 - R3 
 
     R4 = min(tinggiDangkal,arusLambat,gempaJingga)
-    z4 = R4 + 33
+    z4 = 34- R4 
 
     R5 = min(tinggiDangkal,arusLambat,gempaMerah)
-    z5 = R5 + 66
+    z5 = R5 + 33
 
     R6 = min(tinggiDangkal,arusSedang,gempaPutih)
     z6 = 34 - R6
 
     R7 = min(tinggiDangkal,arusSedang,gempaHijau)
-    z7 = R7 + 33
+    z7 = 34 -R7
 
     R8 = min(tinggiDangkal,arusSedang,gempaKuning)
-    z8 = R8 + 33
+    z8 = 34 -R8
 
     R9 = min(tinggiDangkal,arusSedang,gempaJingga)
-    z9 = R9 + 66
+    z9 = 34-R9
 
     R10 = min(tinggiDangkal,arusSedang,gempaMerah)
-    z10 = R10 + 66
+    z10 = R10 + 33
 
     R11 = min(tinggiDangkal,arusKuat,gempaPutih)
     z11 = 34 - R11
 
     R12 = min(tinggiDangkal,arusKuat,gempaHijau)
-    z12 = R12 + 33
+    z12 = 34 - R12
 
     R13 = min(tinggiDangkal,arusKuat,gempaKuning)
-    z13 = R13 + 66
+    z13 = R13 + 33
 
     R14 = min(tinggiDangkal,arusKuat,gempaJingga)
-    z14 = R14 + 66 
+    z14 = R14 + 33 
 
     R15 = min(tinggiDangkal,arusKuat,gempaMerah)
-    z15 = R15 + 66
+    z15 = R15 + 33
 
     R16 = min(tinggiSedang,arusLambat,gempaPutih)
     z16 = 34 - R16
@@ -368,46 +368,46 @@ def show():
     z31 = 34 - R31
 
     R32 = min(tinggiTinggi,arusLambat,gempaHijau)
-    z32 = 34 - R32 
+    z32 = R32 +33
 
     R33 = min(tinggiTinggi,arusLambat,gempaKuning)
-    z33 = 34 - R33
+    z33 = R33 + 33
 
     R34 = min(tinggiTinggi,arusLambat,gempaJingga)
-    z34 = 34 - R34
+    z34 = R34 + 33
 
     R35 = min(tinggiTinggi,arusLambat,gempaMerah)
-    z35 = R35 + 33
+    z35 = R35 + 66
 
     R36 = min(tinggiTinggi,arusSedang,gempaPutih)
     z36 = 34 - R36
 
     R37 = min(tinggiTinggi,arusSedang,gempaHijau)
-    z37 = 34 - R37
+    z37 = R37 + 33
 
     R38 = min(tinggiTinggi,arusSedang,gempaKuning)
-    z38 = 34 - R38
+    z38 = R38 + 33
 
     R39 = min(tinggiTinggi,arusSedang,gempaJingga)
-    z39 = 34 - R39
+    z39 = R39 + 66
 
     R40 = min(tinggiTinggi,arusSedang,gempaMerah)
-    z40 = R40 + 33
+    z40 = R40 + 66
 
     R41 = min(tinggiTinggi,arusKuat,gempaPutih)
     z41 = 34 - R41
 
     R42 = min(tinggiTinggi,arusKuat,gempaHijau)
-    z42 = 34 - R42
+    z42 = R42 + 33
 
     R43 = min(tinggiTinggi,arusKuat,gempaKuning)
     z43 = R43 + 33
 
     R44 = min(tinggiTinggi,arusKuat,gempaJingga)
-    z44 = R44 + 33
+    z44 = R44 + 66
 
     R45 = min(tinggiTinggi,arusKuat,gempaMerah)
-    z45 = R45 + 33
+    z45 = R45 + 66
 
 
     # Menghitung nilai STATUS
